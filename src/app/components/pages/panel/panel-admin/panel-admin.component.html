@@ -1,0 +1,112 @@
+<body>
+    <section class="navBox">
+        <div class="imgContainer">
+            <img src="" alt="">
+        </div>
+        <div class="textContainer">
+            <h4 style="text-align: center;">Bienvenido</h4>
+            <h4 style="text-align: center;">ELIAS JAFET TAGLE</h4>
+
+            <h4><i class="fa-solid fa-chart-line"></i> <a routerLink="panelAdmin">Dashboard</a></h4>
+            <h4><i class="fa-solid fa-envelope"></i>  <a href="">Mailbox</a></h4>
+            <details>
+                <summary><i class="fa-solid fa-truck-ramp-box"></i>  Proveedor</summary>
+                <ul>
+                    <li><a routerLink="proveedor">Gestionar Proveedor</a></li>
+                </ul>
+            </details>
+            <details>
+                <summary><i class="fa-solid fa-box-open"></i>Producto</summary>
+                <ul>
+                    <li><a routerLink="producto">Gestionar Producto</a></li>
+                </ul>
+            </details>
+        </div>
+    </section>
+
+    <section class="mainBox">
+        <h3 style="margin: 1rem 5rem;">Dashboard</h3>
+        <div class="topBox">
+            <div class="box">
+                <div class="boxIcon">
+                    <i style="background-color: orange;" class="fa-solid fa-sack-dollar"></i>
+                </div>
+                <div class="text">
+                    <h3>Total Sale</h3>
+                    <h4>{{this.totalSale}}</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxIcon">
+                    <i style="background-color: green;" class="fa-solid fa-shop"></i>
+                </div>
+                <div class="text">
+                    <h3>Total Orders</h3>
+                    <h4>{{this.totalOrder}}</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxIcon">
+                    <i style="background-color: #2e69ea;" class="fa-solid fa-box-open"></i>
+                </div>
+                <div class="text">
+                    <h3>Total Stock</h3>
+                    <h4>{{this.totalStock}}</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="centerBox">
+            <div class="saleEstadistica">
+                <h2 style="margin: 1rem 5rem;">Ventas del Año por Mes</h2>
+                <canvas id="barChart" width="1000" height="250" #barChart></canvas>
+            </div>    
+        </div>
+
+        <div class="bottomBox">
+            
+            <div class="lastOrder">
+                <h4>Latest Orders</h4>
+                <hr />
+				<table class="table">			
+					<tr>
+						<th>#Orden</th>
+						<th>Nombre Apellido</th>
+						<th>Email</th>
+						<th>Estado de Pedido</th>
+						<th>Fecha de Pedido</th>
+					</tr>
+					<tr>
+						<td>{{this.Orden[0]}}</td>
+						<td>{{this.Orden[1]}}</td>
+						<td>{{this.Orden[2]}}</td>
+						<td>{{this.Orden[3]}}</td>
+						<td>{{this.Orden[4]}}</td>
+					</tr>
+					<tr>
+						<td>{{this.Orden[5]}}</td>
+						<td>{{this.Orden[6]}}</td>
+						<td>{{this.Orden[7]}}</td>
+						<td>{{this.Orden[8]}}</td>
+						<td>{{this.Orden[9]}}</td>
+					</tr>
+					<tr>
+						<td>{{this.Orden[10]}}</td>
+						<td>{{this.Orden[11]}}</td>
+						<td>{{this.Orden[12]}}</td>
+						<td>{{this.Orden[13]}}</td>
+						<td>{{this.Orden[14]}}</td>
+					</tr>
+					<tr>
+						<td>{{this.Orden[15]}}</td>
+						<td>{{this.Orden[16]}}</td>
+						<td>{{this.Orden[17]}}</td>
+						<td>{{this.Orden[18]}}</td>
+						<td>{{this.Orden[19]}}</td>
+					</tr>				
+				</table>
+            </div>
+        </div>
+    </section>
+</body>
+

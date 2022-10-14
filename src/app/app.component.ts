@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IniciarSesionService } from './services/login/iniciar-sesion.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'IMRVS';
+
+  constructor(public loginFlatService:IniciarSesionService){
+    
+  }
 }

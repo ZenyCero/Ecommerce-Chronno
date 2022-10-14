@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-weight: bold;
+}
+
+body{
+    display: flex;
+}
+/* NAV */ 
+
+.navBox{
+    overflow: hidden;
+    height: 100%;
+}
+
+.textContainer{
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.textContainer a{
+    text-decoration: none;
+}
+
+.textContainer h4{
+    margin: 1.5rem;
+}
+
+.textContainer details{
+    margin-bottom: 1.5rem;
+}
+
+summary{
+    font-size: 1.5rem;
+}
+
+.textContainer ul li{
+    list-style: none;
+    margin: 1rem 2rem;
+}
+
+.navBox{
+    width: 20vw;
+    height: 100vh;
+    background-color: #293339;
+}
+
+/* TOP MAIN*/
+
+
+.mainBox{
+    width: 80vw;
+    height: 100vh;
+}
+
+.topBox{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    display: flex;
+    margin: 1rem 0;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.boxIcon i{
+    display: flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.box h3{
+    text-align:start;
+    color: rgba(41,51,57,0.6);
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.box h4{
+    font-weight: bold;
+}
+
+/* ESTADISTICAS */
+
+.centerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerBox h2{
+    font-size: 1.17rem;
+}
+
+/* .socialEstadistica{
+    width: 25%;
+    height: 22rem;
+} */
+
+/* .saleEstadistica{
+    width: 50%;
+    height: 22rem;
+} */
+
+/* LASTEST ORDERS */
+
+.bottomBox{
+    margin-top: 1rem;    
+}
+
+.lastOrder{
+    margin: 1rem 5rem;
+}
+
+.lastOrder h2{
+    margin: 1rem 0;
+}
+
+.lastOrder ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}

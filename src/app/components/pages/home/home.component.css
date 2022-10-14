@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.portada ul{
+    width: 400%;
+    display: flex;
+    animation: portada 12s infinite alternate;
+}
+
+.portada ul li{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+}
+
+.imgPortada{
+    min-width: 85%;
+    max-width: 50%;
+    max-height: 700px;
+    object-fit: cover;
+    object-position: top;
+}
+
+@keyframes portada{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+

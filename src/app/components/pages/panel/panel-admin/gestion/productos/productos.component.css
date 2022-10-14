@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-weight: bold;
+}
+
+body{
+    display: flex;
+}
+/* NAV */ 
+
+.navBox{
+    overflow: hidden;
+    height: 100%;
+}
+
+.textContainer{
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.textContainer a{
+    text-decoration: none;
+}
+
+.textContainer h4{
+    margin: 1.5rem;
+}
+
+.textContainer details{
+    margin-bottom: 1.5rem;
+}
+
+summary{
+    font-size: 1.5rem;
+}
+
+.textContainer ul li{
+    list-style: none;
+    margin: 1rem 2rem;
+}
+
+.navBox{
+    max-width: 20vw;
+    height: 100vh;
+    background-color: #293339;
+}
+
+/* Crud Producto */
+
+.mainBox{
+    width: 80vw;
+    margin-top: 1rem;  
+}
+
+.crudProducto{
+    width: 90%;
+    margin: 0 auto;
+    max-height: 50vh;
+    overflow: auto;
+    border: 2px solid #293339;
+}
+
+.crudProducto th, td {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+/* FORMULARIO */
+
+.formulario{
+    margin-top: 1rem;
+    border: 2px solid #293339;
+    width: 90%;
+    margin: 0 auto;
+    height: 20rem;
+}
+
+.formulario input{
+    height: 1rem;
+}
+
+
+
+
+
+
